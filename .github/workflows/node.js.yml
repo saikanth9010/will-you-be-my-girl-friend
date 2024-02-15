@@ -27,4 +27,4 @@ jobs:
         pnpm install
 
     - name: Run Node.js code
-      run: pnpm run dev
+      run: pnpm run deploy
