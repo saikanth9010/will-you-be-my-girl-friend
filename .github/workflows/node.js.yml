@@ -20,9 +20,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
         
-    - name: Configure Git
-        run: |
-          git config --global user.email "saikanth9010@example.com"
+   
           
 
           
@@ -33,12 +31,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         # cache: 'npm'
+    - name: Configure Git
+      run: git config --global user.email "saikanth9010@example.com"
     - run: npm install -g pnpm
     - run: pnpm install --no-lockfile
     - run: pnpm i
     - run: pnpm run deploy
     - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: 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
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: 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
           publish_dir: ./dist
