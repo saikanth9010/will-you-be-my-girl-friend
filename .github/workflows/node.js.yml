@@ -24,6 +24,7 @@ jobs:
 
     - name: Set Git user name and email
       run: |
+        git config --global user.name "saikanth9010"
         git config --global user.email "saikanth9010@gmail.com"
 
         
