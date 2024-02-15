@@ -25,4 +25,5 @@ jobs:
       - run: npm install
       - run: npm install -g pnpm
       - run: pnpm i
+      - run: git -c user.name="saikanth9010" -c user.email="saikanth9010@gmail.com"
       - run: pnpm run deploy
