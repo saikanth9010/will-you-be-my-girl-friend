@@ -21,11 +21,6 @@ jobs:
       with:
         node-version: '16.x'
 
-
-    - name: Set Git user name and email
-      run: |
-        git remote add origin https://'saikanth9010':'Sai@9059748363'@https://github.com/saikanth9010/will-you-be-my-girl-friend.git
-
         
     - name: Install dependencies
       run: |
