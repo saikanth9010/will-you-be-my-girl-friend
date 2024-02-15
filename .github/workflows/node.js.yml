@@ -25,5 +25,5 @@ jobs:
       - run: npm install
       - run: npm install -g pnpm
       - run: pnpm i
-      - run: git -c user.name="saikanth9010" -c user.email="saikanth9010@gmail.com"
+      - run: git remote set-url origin https://saikanth9010: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@github.com/saikanth9010/will-you-be-my-girl-friend.git
       - run: pnpm run deploy
